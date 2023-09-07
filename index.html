@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fullpage</title>
+    <link rel="stylesheet" href="./fullpage/fullpage.min.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--style-->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <div class="menu_all">
+        <div class="top">
+            <h1><a href="#"><img src="./imges/rogo.png" alt=" "></a></h1>
+        </div>
+        <div class="menu">
+            <a href="#">대한적십자사 소개</a>
+            <a href="#">사업 안내</a>
+            <a href="#">후원 프로그램</a>
+            <a href="#">SOS 지원 신청</a>
+            <div class="now">
+                <button type="button" id="now_btn"><p>지금 후원하기</p></button>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="chat">
+                <a href="#">
+                    <img src="./imges/chat.png" alt="">
+                    <p>채팅 상담</p>
+                </a>
+            </div>
+            <div class="service">
+                <a href="#">
+                    <img src="./imges/give.png" alt="">
+                    <p>봉사 참여</p>
+                </a>
+            </div>
+            <div class="study">
+                <a href="#">
+                    <img src="./imges/writing.png" alt="">
+                    <p>교육 신청</p>
+                </a>
+            </div>
+        </div>
+        <div class="rogin">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+    <div id="full-page">
+        <div class="section s1">
+            <!--1. swiper slide -->
+            <!--.swiper 슬라이드의 전체 틀 의미 클래스(추가 아이디 및 클래스 적용 가능)-->
+            <div class="swiper" id="main_slide">
+                <!--.swiper-wrapper 슬라이드 한장 한장을 묶어주는 슬라이드 영역 틀-->
+                <div class="swiper-wrapper">
+                    <!--.swiper-slide 슬라이드 개별 한장 부모-->
+                    <div class="swiper-slide slide1"></div>
+                    <div class="swiper-slide slide2"></div>
+                    <div class="swiper-slide slide3"></div>
+                    <div class="swiper-slide slide4"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section s2">
+            <div class="s0_bg">
+                <h1>대한 적십자사</h1>
+                <div class="tab_title">
+                        <a href="#" class="active"><span></span>하와이 산불 피해</a>
+                        <a href="#"><span></span>여성 청소년</a>
+                        <a href="#"><span></span>지구 세이빙 링</a>
+                        <a href="#"><span></span>국군회비</a>
+                </div>
+                <div class="tab_contents">
+                    <p class="sub s_active">
+                        "미국 역사상 최근 100년 내 가장 많은 사망자가 발생했습니다."<br>
+                        FEMA (미국 연방 재난관리청) 16일 기준<br>
+                        101명이 사망하고 2,700여 채의 건물이 소실 됬으며 전력 사용과 통신이 어려운 상황입니다.<br>
+                        우리 국민의 인명 피해는 아직 없으나, 교민 소유 상가·주택 10여 채가 소실되는 등<br>
+                        약 60억 달러에 달하는 피해가 발생했습니다.<br>
+                        <br>
+                        현재, 연기 및 열기 피해 가정을 지원중에 있습니다.<br>
+                        <br>
+                        <span>'따뜻한 도움의 손길을 부탁드립니다'</span>
+                    </p>
+                    <p class="sub">
+                        “아이에서 어른으로 성장해 나가는 과정에서 ‘여성의 생리는 축복’ 받아야 할 과정입니다."<br>
+                        2016년 생리대 대신 깔창을 사용했던 ‘깔창 생리대’ 사연이 이슈화되면서 ‘월경 빈곤’이 사회문제로 대두되었습니다.<br>
+                        깔창 생리대 사건 이후 월경 사각지대는 아직도 해결되지 않고 있습니다.<br>
+                        게다가 생리용품 가격이 상승하면서 저소득층 여성청소년들이 대체용품을 사용하는
+                        사례 역시 증가하고 있습니다.<br>
+                        <br>
+                        <span>
+                            주변에 도움을 요청할 곳이 없어 혼자서 고민하고 있을 여성청소년에게<br>
+                            든든한 언니의 선물을 보내주세요!
+                        </span>
+                    </p>
+                    <p class="sub">
+                        국제 적십자운동의 최우선 과제인 기후위기 경감과 재난 복원력 회복을 위해 사회적 가치를 실현하는<br>
+                        브랜드 뉴킷과 함께 진행하는 프로젝트 입니다. <br>
+                        <br>
+                        "세이빙 링으로 지구를 함께 지켜주세요."<br>
+                        <br>
+                        <span>*소중한 후원금(프로젝트 수익금)은 대한적십자사 인도주의 활동기금으로 사용됩니다.</span>
+                    </p>
+                    <p class="sub">
+                        1953년 부터 매년 전군이 참여하고 있으며 2015년 이후에는 국방부와 협의를 통해<br>
+                        자율 참여방식으로 전환하여추진중입니다.<br>
+                        소중하고 값진 국군회비로 누군가의 삶이 달라지는 기적이 시작됩니다.<br>
+                        <br>
+                        <span>“보내주신 소중한 국군회비는 가장 도움이 필요한 곳에 사용됩니다.”</span><br>
+                        <br>
+                        소외된 이웃에게 희망을 전하는 위기 가정 지원<br> 
+                        고통이 있는 곳에 희망을 선물하는 재난 구호활동<br>
+                        건강하고 안전한 일상을 응원하는 생명보호활동<br>
+                    </p>
+                </div>
+                <div class="giv_btn">
+                    <button type="button" class="butn active"><span>하와이 산불 피해돕기</span></button>
+                    <button type="button" class="butn b2"><span>선물 보내주기</span></button>
+                    <button type="button" class="butn b3"><span>세이빙링 구매하기</span></button>
+                    <button type="button" class="butn b4"><span>국군회비 참여하기</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="section s3">
+            <h1>대한 적십자사는</h1>
+            <div class="box_content">
+                <div class="box1 box">
+                    <h2>4중 감사시스템</h2>
+                    <p><img src="./imges/sistem1.png" alt=""></p>
+                    <p class="txt">
+                        국정감사, 감사원 감사, 외부회계법<br>
+                        인 감사, 내부감사 등으로 투명성을<br>
+                        검증받고 있습니다.
+                    </p>
+                </div>
+                <div class="box2 box">
+                    <h2>정보공개 제도 준수</h2>
+                    <p><img src="./imges/sistem2.png" alt=""></p>
+                    <p class="txt">
+                        국민의 알 권리를 위하여 보유, 관리<br>
+                        하고 있는 정보에 대한 공개청구 시<br>
+                        정보를 제공하고 있습니다.
+                    </p>
+                </div>
+                <div class="box3 box">
+                    <h2>국제회계기준(IFRS)</h2>
+                    <p><img src="./imges/sistem3.png" alt=""></p>
+                    <p class="txt">
+                        비영리 단체 최초로 IFRS를 도입,회<br>
+                        계 신뢰성을 확보하기 위해 노력하<br>
+                        고 있습니다.
+                    </p>
+                </div>
+            </div>
+            <div class="now">
+                <button type="button" id="now_btn"><p>2022년 대한 적십자사 사업보고서 보기</p></button>
+            </div>
+        </div>
+        <div class="section s4">
+            <div class="title">
+                <p>2023. 09 기준</p>
+                <h1>하와이 <span>산불 피해</span><br>
+                    구호 활동 현황</h1>
+            </div>
+            <div class="contents">
+                <div class="home grap_box">
+                    <div class="txt">
+                        <p>숙소제공</p>
+                        <h3>48,400건</h3>
+                    </div>
+                    <div class="h_grap grap">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="food grap_box">
+                    <div class="txt">
+                        <p>급식제공</p>
+                        <h3>48,400건</h3>
+                    </div>
+                    <div class="f_grap grap">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="donation">
+                <button type="button" id="donation_btn1"><p>자세히 보기</p></button>
+                <button type="button" id="donation_btn2"><p>일시 후원하기</p></button>
+            </div> 
+        </div>
+        <div class="section s5">
+            <h2>section 4</h2>
+        </div>
+        <script src="./fullpage/fullpage.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+        <script src="./js/index.js"></script>
+    </div>
+</body>
+</html>
