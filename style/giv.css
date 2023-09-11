@@ -1,0 +1,385 @@
+table,th,td {
+    /* border:1px solid black; */
+    border-bottom:1px solid #aaa;
+    border-top:1px solid #aaa;
+}
+th {
+    border-right:1px solid #aaa;
+}
+body{
+}
+.menu_all {
+    border-right:1px solid #aaa;
+    /* display:none; */
+    background:#fff;
+    position:fixed;
+    padding:50px 40px 45px 40px;
+    /* border:1px solid #000; */
+    z-index:999;
+    width:245px;
+    float:left;
+    height:100%;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: space-between;
+
+}
+.menu_all .top {
+    padding-bottom:100px;
+}
+.menu_all .top h1 {}
+.menu_all .top h1 a {}
+.menu_all .top h1 a img {}
+.menu_all .top .rogin {
+    /* margin-top:20px; */
+}
+.menu_all .top .rogin a {
+    display:flex;
+    align-items:center;
+}
+.menu_all .top .rogin a img {
+    padding-right:15px;
+}
+.menu_all.top .rogin a p  {
+    font-size:1rem;
+}
+/*-------------------------------------------*/
+.menu_all .menu {
+    display:flex;
+    flex-flow:column nowrap;
+}
+.menu_all .menu a {
+    /* padding-bottom:40px; */
+    font-size:1.333rem;
+    font-weight:700;
+}
+.menu_all .menu a:nth-child(1) {padding-bottom:20px;}
+.menu_all .menu a:nth-child(2) {
+    width:100%;
+    border-top:2px solid #ccc;
+    padding:20px 0;
+    /* background:red; */
+}
+.menu_all .menu a:nth-child(3) {
+    width:100%;
+    border-top:2px solid #ccc;
+    border-bottom:2px solid #ccc;
+    padding:20px 0;
+}
+.menu_all .menu a:nth-child(4) {
+    padding:20px 0 50px 0;
+}
+.menu_all .menu .now {}
+.menu_all .menu .now #now_btn  {
+    /* border:1px solid #000; */
+    background:#FF0000;
+    
+    border-radius:5px;
+    padding:15px 20px;
+    margin:0 0 100px 0;
+}
+.menu_all .menu .now #now_btn:hover {
+    box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.20);
+}
+.menu_all .menu .now #now_btn p {
+    font-size:1.333rem;
+    font-weight:700;
+    color:#fff;
+}
+/*------------------------------------------------*/
+.menu_all .bottom {
+    /* padding-top:100px; */
+    display:flex;
+    flex-flow:column nowrap;
+}
+.menu_all .bottom .chat {}
+.menu_all .bottom .chat a {
+    display:flex;
+    align-items:center;
+}
+.menu_all .bottom .chat a img {
+    padding-right:15px;
+}
+.menu_all .bottom .chat a p {
+    font-size:1rem;
+}
+.menu_all .bottom .service {
+    padding:20px 0;
+}
+.menu_all .bottom .service a {
+    display:flex;
+    align-items:center;
+}
+.menu_all .bottom .service a img {
+    padding-right:15px;
+}
+.menu_all .bottom .service a p {
+    font-size:1rem;
+}
+.menu_all .bottom .study {}
+.menu_all .bottom .study a {
+    display:flex;
+    align-items:center;
+}
+.menu_all .bottom .study a img {
+    padding-right:15px;
+}
+.menu_all .bottom .study a p {
+    font-size:1rem;
+}
+.menu_all .rogin {
+    padding-top:100px;
+    text-align: center;
+}
+.menu_all .rogin a {
+    margin-right:10px;
+    font-size:0.75rem;
+    font-weight:500;
+}
+.menu_all .rogin a:hover {
+    padding-bottom:5px;
+    border-bottom:1px solid #000;
+}
+.menu_all .rogin a:last-child{margin-right:0;}
+/* header {
+    background:#f1f1f1;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 20px;
+}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+
+header .menu {}
+header .menu a {
+    font-size:1rem ;
+    font-weight: 700;
+    margin-right:20px;
+}
+header .menu a:last-child {margin-right:0;}
+
+header .user {}
+header .user a {
+    margin-right:15px;
+    font-size:1rem;
+}
+header .user a:last-child {margin-right:0;} */
+/*----------------------------------------------------------main--------------------------*/
+main {
+    width:1440px;margin:0 auto;
+}
+.step {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:150px 0 50px 0;
+}
+.step .step1 {
+    background:url(../imges/giv/step1_on.png) no-repeat;
+    background-size:cover;
+    width:276px; height:89px;
+    padding:20px 0;
+    text-align: center;
+}
+.step .step1 h1 {
+    margin-bottom:10px;
+    font-size:1.125rem;
+    color:#fff;
+}
+.step .step1 p {
+    font-size:1.125rem;
+    color:#fff;
+    font-weight: 700;
+}
+/*-*/
+.step .step2 {
+    margin-left:-30px;
+    width:270px; height:89px;
+    background:url(../imges/giv/step2_off.png) no-repeat;
+    background-size:cover;
+    padding:20px 10px;
+    text-align:center;
+}
+.step .step2 h1 {
+    margin-bottom:10px;
+    font-size:1.125rem;
+}
+.step .step2 p {
+    font-size:1.125rem;
+}
+
+/*---------------------------------------*/
+main {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    margin-bottom:100px;
+}
+.top_line {margin-bottom:50px;}
+.top_line span {
+    display:block;
+    background:#aaa;
+    width:1069px;
+    height:1px;
+}
+.choice_give {}
+.choice_give form {}
+.choice_give form fieldset {}
+.choice_give form fieldset > h1 {
+    font-size:1.777rem;
+    margin-bottom:20px
+}
+.choice_give form fieldset .choice {}
+.choice_give form fieldset .choice select {
+    width:172px;
+    height:50px;
+    font-size:1.125rem;
+    font-weight: 700;
+    border:1px solid #aaa;
+    padding: 0 10px;
+}
+.choice_give form fieldset .choice select option {
+    font-size:1.125rem;
+}
+.choice_give form fieldset .giv_con {}
+.choice_give form fieldset .giv_con .top {
+    /* background:lightcoral; */
+    width:1070px;
+    margin:50px 0 27px 0;
+}
+.choice_give form fieldset .giv_con .top h1 {
+    font-size:1.777rem;
+}
+.choice_give form fieldset .giv_con .small p {
+    display:flex;
+    justify-content: flex-end;
+    font-size:1rem;
+    padding-top:26px;
+    margin-bottom:5px;
+}
+.choice_give form fieldset .giv_con .small p span {color:#ff0000;}
+/*---------------------------------*/
+.choice_give form fieldset table {}
+.choice_give form fieldset table tbody {}
+.choice_give form fieldset table tbody tr {}
+.choice_give form fieldset table tbody tr th {
+    width:320px; height:78px;
+    font-size: 1.125rem;
+    padding-left:20px;
+    font-weight: 700;
+}
+.choice_give form fieldset table tbody tr th span {
+    color:#ff0000;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+.choice_give form fieldset table tbody tr td {
+    width:749px; height:78px;
+    padding-left:20px;
+}
+.choice_give form fieldset table tbody tr td label {
+    padding-right:20px;
+    font-size:1rem; 
+}
+.choice_give form fieldset table tbody tr td label #money {
+    appearance: none;
+}
+.choice_give form fieldset table tbody tr td label span {
+    background:url(../imges/giv/round_off.png)no-repeat;
+    padding-left:30px;
+}
+.choice_give form fieldset table tbody tr td label #money:checked+span {
+    background:url(../imges/giv/round_on.png) no-repeat;
+    padding-left:30px;
+}
+.choice_give form fieldset table tbody tr td #name {
+    width:192px;
+    height:50px;
+    border:1px solid #aaa;
+    padding-left:20px;
+}
+.choice_give form fieldset table tbody tr td #birth1 {
+    width:200px; height:50px;
+    border:1px solid #aaa;
+    padding-left:20px;
+}
+.choice_give form fieldset table tbody tr td #birth2 {
+    border:1px solid #aaa;
+    width:50px; height:50px;
+    padding-left:20px;
+}
+.choice_give form fieldset table tbody tr td .small_txt {
+    font-size:0.75rem;
+}
+.choice_give form fieldset table tbody tr td #phone {
+    width:192px;
+    height:50px;
+    border:1px solid #aaa;
+    padding-left:20px;
+}
+/*---------------------------------------------------------------------------------*/
+.bottom {
+    margin:50px 0 20px 0 ;
+    width:1069px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+}
+.bottom .line {
+    width:1069px;
+    border:1px solid #ff0000;
+    padding:20px 20px;
+}
+.bottom .line .announ {width:769px;}
+.bottom .line .announ h3 {
+    font-size:1.125rem;
+    font-weight: 600;
+    margin-bottom:5px;
+}
+.bottom .line .announ p {
+    line-height:30px;
+    font-size:1rem;
+    font-weight: 500;
+    letter-spacing:-0.2px;
+}
+.bottom .line .announ p span {
+    font-size:1.125rem;
+    font-weight: 600;
+}
+.bottom .announ_bt {
+    display:flex;
+    justify-content: space-between;
+    margin-top:20px;
+}
+.bottom .announ_bt .txt {}
+.bottom .announ_bt .txt p {
+    font-size:1rem;
+    font-weight: 600;
+    margin-bottom:5px;
+}
+.bottom .announ_bt .txt p span {
+    font-size:1rem;
+    
+}
+.bottom .announ_bt .an_bt {}
+.bottom .announ_bt .an_bt #announ_btn:hover {
+    box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.20);
+}
+.bottom .announ_bt .an_bt #announ_btn {
+    background:#ff0000;
+    /* background: none; */
+
+    padding:10px 10px;
+}
+.bottom .announ_bt .an_bt #announ_btn img {
+    margin-right:10px;
+} 
+.bottom .announ_bt .an_bt #announ_btn a {
+    font-size:1.125rem;
+    font-weight: 700;
+    color:#fff;
+}
+
+

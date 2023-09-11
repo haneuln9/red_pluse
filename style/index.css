@@ -61,10 +61,10 @@ body,html {min-width:1920px;}
     padding:20px 0 50px 0;
 }
 .menu_all .menu .now {}
-.menu_all .menu .now #now_btn {
+.menu_all .menu .now #now_btn  {
     /* border:1px solid #000; */
     background:#FF0000;
-    color:#fff;
+    
     border-radius:5px;
     padding:15px 20px;
     margin:0 0 100px 0;
@@ -75,6 +75,7 @@ body,html {min-width:1920px;}
 .menu_all .menu .now #now_btn p {
     font-size:1.333rem;
     font-weight:700;
+    color:#fff;
 }
 /*------------------------------------------------*/
 .menu_all .bottom {

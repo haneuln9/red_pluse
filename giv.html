@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한적십자 | 기부하기</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/giv.css">
+</head>
+<body>
+    <!-- <header>
+        <h1><a href="./index.html"><img src="./imges/rogo.png" alt=""></a></h1>
+        <div class="menu">
+            <a href="#">대한적십자사 소개</a>
+            <a href="#">사업 안내</a>
+            <a href="#">후원 프로그램</a>
+            <a href="#">SOS 지원 신청</a>
+        </div>
+        <div class="user">
+            <a href="#">로그인</a>
+            <a href="#">회원 가입</a>
+        </div>
+    </header> -->
+    <div class="menu_all">
+        <div class="top">
+            <h1><a href="./index.html"><img src="./imges/rogo.png" alt=" "></a></h1>
+        </div>
+        <div class="menu">
+            <a href="#">대한적십자사 소개</a>
+            <a href="#">사업 안내</a>
+            <a href="#">후원 프로그램</a>
+            <a href="#">SOS 지원 신청</a>
+            <div class="now">
+                <button type="button" id="now_btn"><a href="./giv.html"><p>지금 후원하기</p></a></button>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="chat">
+                <a href="#">
+                    <img src="./imges/chat.png" alt="">
+                    <p>채팅 상담</p>
+                </a>
+            </div>
+            <div class="service">
+                <a href="#">
+                    <img src="./imges/give.png" alt="">
+                    <p>봉사 참여</p>
+                </a>
+            </div>
+            <div class="study">
+                <a href="#">
+                    <img src="./imges/writing.png" alt="">
+                    <p>교육 신청</p>
+                </a>
+            </div>
+        </div>
+        <div class="rogin">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+    <main>
+        <div class="step">
+            <div class="step1">
+                <h1>STEP1</h1>
+                <p>분야 선택/정보입력</p>
+            </div>
+            <div class="step2">
+                <h1>STEP2</h1>
+                <p>결제 방법/결제 하기</p>
+            </div>
+        </div>
+        <div class="top_line">
+            <span></span>
+        </div>
+        <div class="choice_give">
+            <form action="#" method="post">
+                <fieldset>
+                    <h1>후원분야 선택</h1>
+                    <div class="choice">
+                        <select name="giv">
+                            <option value="">정기후원</option>
+                            <option value="">일시후원</option>
+                            <option value="">캠패인 후원</option>
+                        </select>
+                    </div>
+                    <div class="giv_con">
+                        <div class="top">
+                            <h1>후원 정보 입력</h1>
+                        </div>
+                        <div class="small">
+                            <p><span>*</span>는 필수 입력 사항입니다.</p>
+                        </div>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th scope="row">후원 금액 <span>*</span></th>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="money" value="money1" id="money">
+                                        <span>10,000원</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="money" value="money1" id="money">
+                                        <span>20,000원</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="money" value="money1" id="money">
+                                        <span>30,000원</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="money" value="money1" id="money">
+                                        <span>50,000원</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="money" value="money1" id="money">
+                                        <span>50,000원</span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">후원자명 <span>*</span></th>
+                                <td>
+                                    <input type="text" autofocus name="user_name" maxlength="5" placeholder="홍길동" id="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">주민등록번호 <span>*</span></th>
+                                <td>
+                                    <input type="number" name="user_number-f" maxlength="6" placeholder="주민 등록번호 앞6자리" id="birth1"> - 
+                                    <input type="password" name="user_number_b" maxlength="1" placeholder="" id="birth2">
+                                    <span class="small_txt">*후원자 구분을 위해 주민번호 앞 6자리와 뒤 1자리를 입력해주세요.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">휴대전화 <span>*</span></th>
+                                <td>
+                                    <input type="number" autofocus name="phone_number" maxlength="11" placeholder="01000000000" id="phone">
+                                    <span class="small_txt">*( - ) 기호를 제외한 숫자만 입력해주세요</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">개인정보 수집 · 이용 동의 <span>*</span></th>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="ok" value="ok" id="ok">
+                                        개인정보 수집 · 이용에 동의합니다.
+                                    </label>
+                                    </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+        <div class="bottom">
+            <div class="line">
+                <div class="announ">
+                    <h3>대한적십자사의 후원회원이 되시면, 후원금 세액공제를 받으실 수 있습니다.</h3>
+                    <p>적십자사의 기부금은 <span>일반기부금</span>으로 연말정산 시 소득 금액의 <span>30%</span> 한도 내에서 15% 세액공제를 받을 수 있습니다.
+                        (1천만원 초과분부터는 초과분에 한하여 30% 세액공제)</p>
+                </div>
+            </div>
+            <div class="announ_bt">
+                <div class="txt">
+                    <p>*<span>희망풍차 콜센터 1577-8179를 통해서도 가입할 수 있습니다.</span></p>
+                    <p>(월~금 09:00~18:00)</p>
+                </div>
+                <div class="an_bt">
+                    <button type="button" id="announ_btn"><a href="./giv2.html"><img src="./imges/giv/check.png" alt="">다음</a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

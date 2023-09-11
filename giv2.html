@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한적십자사 | 결제하기</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/giv2.css">
+</head>
+<body>
+    <!-- <header>
+        <h1><a href="./index.html"><img src="./imges/rogo.png" alt=""></a></h1>
+        <div class="menu">
+            <a href="#">대한적십자사 소개</a>
+            <a href="#">사업 안내</a>
+            <a href="#">후원 프로그램</a>
+            <a href="#">SOS 지원 신청</a>
+        </div>
+        <div class="user">
+            <a href="#">로그인</a>
+            <a href="#">회원 가입</a>
+        </div>
+    </header> -->
+    <div class="menu_all">
+        <div class="top">
+            <h1><a href="./index.html"><img src="./imges/rogo.png" alt=" "></a></h1>
+        </div>
+        <div class="menu">
+            <a href="#">대한적십자사 소개</a>
+            <a href="#">사업 안내</a>
+            <a href="#">후원 프로그램</a>
+            <a href="#">SOS 지원 신청</a>
+            <div class="now">
+                <button type="button" id="now_btn"><a href="./giv.html"><p>지금 후원하기</p></a></button>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="chat">
+                <a href="#">
+                    <img src="./imges/chat.png" alt="">
+                    <p>채팅 상담</p>
+                </a>
+            </div>
+            <div class="service">
+                <a href="#">
+                    <img src="./imges/give.png" alt="">
+                    <p>봉사 참여</p>
+                </a>
+            </div>
+            <div class="study">
+                <a href="#">
+                    <img src="./imges/writing.png" alt="">
+                    <p>교육 신청</p>
+                </a>
+            </div>
+        </div>
+        <div class="rogin">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+    <main>
+        <div class="step">
+            <div class="step1">
+                <h1>STEP1</h1>
+                <p>분야 선택/정보입력</p>
+            </div>
+            <div class="step2">
+                <h1>STEP2</h1>
+                <p>결제 방법/결제 하기</p>
+            </div>
+        </div>
+        <div class="top_line">
+            <span></span>
+        </div>
+        <div class="choice_give">
+            <form action="#" method="post">
+                <fieldset>
+                    <div class="giv_con">
+                        <div class="top">
+                            <h1>후원금 결제 방법을 결정해 주세요.</h1>
+                            <p>매월 일정금액을 기부하는 정기후원으로 위기가정에 긴급한 도움을 전할 뿐 아니라, 자립할 수 있는 힘이 되어주세요.</p>
+                        </div>
+                        <div class="small">
+                            <p><span>*</span>는 필수 입력 사항입니다.</p>
+                        </div>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th scope="row">납입 방법 <span>*</span></th>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="money" value="money1" id="main_card">
+                                        <span>신용 카드</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="money" value="money1" id="account">
+                                        <span>자동 이체</span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">기부금 영수증 발급신청 <span>*</span></th>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="card" value="money1" id="card">
+                                        <span>신청</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="card" value="money1" id="card">
+                                        <span>신청안함</span>
+                                    </label>
+                                    <span class="small_txt">※기부금 영수증 발급 신청 시 주민등록번호를 꼭 입력하셔야 됩니다.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">카드사 <span>*</span></th>
+                                <td>
+                                    <select name="giv" id="card_name">
+                                        <option value="">선택</option>
+                                        <option value="">비씨카드</option>
+                                        <option value="">국민카드</option>
+                                        <option value="">외환카드</option>
+                                        <option value="">삼성카드</option>
+                                        <option value="">엘지카드</option>
+                                        <option value="">현대카드(다이너스)</option>
+                                        <option value="">롯데카드(AMX)</option>
+                                        <option value="">신한카드</option>
+                                        <option value="">한미카드</option>
+                                        <option value="">수협카드</option>
+                                        <option value="">우리카드</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">유효기간 <span>*</span></th>
+                                <td>
+                                    <input type="number" autofocus name="card_years" maxlength="5" placeholder="" id="card_years"> 년
+                                    <input type="number" autofocus name="card_month" maxlength="8" placeholder="" id="card_month"> 월
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">카드번호 <span>*</span></th>
+                                <td>
+                                    <input type="number" autofocus name="card_num" maxlength="5" placeholder="" id="card_num1"> -
+                                    <input type="number" autofocus name="card_num" maxlength="8" placeholder="" id="card_num2"> -
+                                    <input type="number" autofocus name="card_num" maxlength="8" placeholder="" id="card_num3"> -
+                                    <input type="number" autofocus name="card_num" maxlength="5" placeholder="" id="card_num4">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">즉시 기부 여부 <span>*</span></th>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="money" value="money1">
+                                        <span>예</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="money" value="money1">
+                                        <span>아니오</span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="home_main">주소 <span>*</span></th>
+                                <td>
+                                    <div class="home_top">
+                                        <input type="text" autofocus name="home" placeholder="" id="home1" readonly>
+                                        <button type="button" id="home_btn">우편번호 찾기</button>
+                                    </div>
+                                    <div class="home_btom">
+                                        <input type="text" autofocus name="home" placeholder="" id="home2" readonly>
+                                        <input type="text" autofocus name="home" placeholder="" id="home3">
+                                        <span class="small_txt">
+                                            ※ 2014년 1월 1일 부터 공공기관에서 도로명 주소사용을 의무화 하고 있습니다.<br>
+                                            도로명 주소 안내 시스템을 통해 지번주소로 도로명주소 검색이 가능합니다. 
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">이메일 <span>*</span></th>
+                                <td>
+                                    <input type="text" autofocus name="email" placeholder="" id="email"> @
+                                    <input type="text" autofocus name="email" placeholder="" id="email2">
+                                    <select name="giv" id="email_name">
+                                        <option value=""> ==이메일 선택==</option>
+                                        <option value="">naver.com</option>
+                                        <option value="">hanmail.net</option>
+                                        <option value="">nate.com</option>
+                                        <option value="">gmail.com</option>
+                                        <option value="">hotmail.com</option>
+                                        <option value="">yahoo.co.kr</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+        <div class="bottom">
+            <div class="line">
+                <div class="announ">
+                    <h3>대한적십자사의 후원회원이 되시면, 후원금 세액공제를 받으실 수 있습니다.</h3>
+                    <p>적십자사의 기부금은 <span>일반기부금</span>으로 연말정산 시 소득 금액의 <span>30%</span> 한도 내에서 15% 세액공제를 받을 수 있습니다.
+                        (1천만원 초과분부터는 초과분에 한하여 30% 세액공제)</p>
+                </div>
+            </div>
+            <div class="announ_bt">
+                <div class="txt">
+                    <p>*<span>희망풍차 콜센터 1577-8179를 통해서도 가입할 수 있습니다.</span></p>
+                    <p>(월~금 09:00~18:00)</p>
+                </div>
+                <div class="an_bt">
+                    <button type="button" id="announ_btn"><a href="./giv.html"><img src="./imges/giv/check.png" alt="">후원 신청하기</a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/giv2.js"></script>
+</body>
+</html>
