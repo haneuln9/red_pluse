@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한적십자사 | 로그인</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/login.css">
+    <!-- <link rel="stylesheet" href="./style/common.css"> -->
+    <!--폰트-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;600;700&display=swap" rel="stylesheet">
+    <!--파비콘-->
+    <link rel="shortcut icon" href="./imges/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./imges/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="menu_all">
+        <div class="top">
+            <h1><a href="./index.html"><img src="./imges/rogo.png" alt=" "></a></h1>
+        </div>
+        <div class="menu">
+            <a href="#">대한적십자사 소개</a>
+            <a href="#">사업 안내</a>
+            <a href="#">후원 프로그램</a>
+            <a href="#">SOS 지원 신청</a>
+            <div class="now">
+                <button type="button" id="now_btn"><a href="./giv.html"><p>지금 후원하기</p></a></button>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="chat">
+                <a href="#">
+                    <img src="./imges/chat.png" alt="">
+                    <p>채팅 상담</p>
+                </a>
+            </div>
+            <div class="service">
+                <a href="#">
+                    <img src="./imges/give.png" alt="">
+                    <p>봉사 참여</p>
+                </a>
+            </div>
+            <div class="study">
+                <a href="#">
+                    <img src="./imges/writing.png" alt="">
+                    <p>교육 신청</p>
+                </a>
+            </div>
+        </div>
+        <div class="rogin">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+    <h1>로그인</h1>
+    <form action="#">
+        <fieldset>
+            <div class="id_pw">
+                <div class="id">
+                    <input type="text" autofocus name="id_txt"  placeholder="아이디 또는 이메일 아이디" id="id_txt">
+                </div>
+                <div class="pw">
+                    <input type="text" autofocus name="pw_txt"  placeholder="비밀번호를 입력하세요" id="pw_txt">
+                    <p><img src="./imges/login/lock_on.png" alt=""></p>
+                </div>
+            </div>
+            <div class="rogin_btn">
+                <button type="button" id="login">로그인 하기</button>
+            </div>
+            <div class="rogin_sub">
+                <div class="id_save">
+                    <label>
+                        <input type="checkbox" name="save_id" value="save_id" id="save_id">
+                        <span>아이디 저장</span>
+                    </label>
+                </div>
+                <div class="id_pw_find">
+                    <a href="#">아이디 찾기</a>
+                    <a href="#">비밀번호 찾기</a>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <div class="login_line">
+        <span></span>
+    </div>
+    <div class="easy_login">
+        <h1>간편하게 시작하기</h1>
+        <div class="sns_login">
+            <a href="#"><img src="./imges/login/sns1.png" alt=""></a>
+            <a href="#"><img src="./imges/login/sns2.png" alt=""></a>
+            <a href="#"><img src="./imges/login/sns3.png" alt=""></a>
+        </div>
+        <h2>간편인증을 이용하시면 아이디/비밀번호 없이 로그인이 가능합니다.</h2>
+        <div class="rogin_btn">
+            <button type="button" id="login">간편인증 로그인</button>
+        </div>
+    </div>
+</body>
+</html>
