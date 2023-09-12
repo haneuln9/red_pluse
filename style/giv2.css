@@ -1,4 +1,5 @@
 body,html {min-width:1920px;}
+.menu_all {border-right:1px solid #aaa;}
 table,th,td {
     /* border:1px solid black; */
     border-bottom:1px solid #aaa;
