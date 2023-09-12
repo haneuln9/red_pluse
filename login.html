@@ -6,7 +6,7 @@
     <title>대한적십자사 | 로그인</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/login.css">
-    <!-- <link rel="stylesheet" href="./style/common.css"> -->
+    <link rel="stylesheet" href="./style/common.css">
     <!--폰트-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;600;700&display=swap" rel="stylesheet">
@@ -49,11 +49,14 @@
             </div>
         </div>
         <div class="rogin">
-            <a href="#">로그인</a>
+            <a href="./login.html">로그인</a>
             <a href="#">회원가입</a>
         </div>
     </div>
-    <h1>로그인</h1>
+    <div class="title">
+        <h1>로그인</h1>
+    </div>
+    
     <form action="#">
         <fieldset>
             <div class="id_pw">
@@ -61,8 +64,9 @@
                     <input type="text" autofocus name="id_txt"  placeholder="아이디 또는 이메일 아이디" id="id_txt">
                 </div>
                 <div class="pw">
-                    <input type="text" autofocus name="pw_txt"  placeholder="비밀번호를 입력하세요" id="pw_txt">
-                    <p><img src="./imges/login/lock_on.png" alt=""></p>
+                    <input type="password" autofocus name="pw_txt"  placeholder="비밀번호를 입력하세요" id="pw_txt">
+                    <a href="#"><img src="./imges/login/lock_on.png" alt=""></a>
+                    <!-- <p class="active"><img src="./imges/login/lock_off.png" alt=""></p> -->
                 </div>
             </div>
             <div class="rogin_btn">
@@ -97,5 +101,6 @@
             <button type="button" id="login">간편인증 로그인</button>
         </div>
     </div>
+    <script src="./js/login.js"></script>
 </body>
 </html>

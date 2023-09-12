@@ -1,6 +1,15 @@
 body,html {min-width:1920px;}
-.menu_all {display:none;}
-form {width:400px;}
+.menu_all {border-right:1px solid #aaa;}
+.title >h1{
+    
+    font-size:1.777rem;
+    text-align:center;
+    padding:80px 0;
+}
+form {
+    width:400px;
+    margin:0 auto;
+}
 form fieldset {}
 form fieldset .id_pw {}
 form fieldset .id_pw .id {margin-bottom:10px;}
@@ -15,11 +24,11 @@ form fieldset .id_pw  #pw_txt {
     padding:20px 10px;
     border:1px solid #aaa;
 }
-form fieldset .id_pw .pw p {
+form fieldset .id_pw .pw a {
     margin:20px -30px;
     cursor:pointer;
 }
-form fieldset .id_pw .pw p img {}
+form fieldset .id_pw .pw a img {}
 /*-------*/
 form fieldset .rogin_btn {
     margin:30px 0;
@@ -38,6 +47,7 @@ form fieldset .rogin_sub {
     display:flex;
     justify-content:space-between;
     width:400px;
+    margin-bottom:40px;
 }
 form fieldset .rogin_sub .id_save {}
 form fieldset .rogin_sub .id_save label {cursor:pointer;}
@@ -66,8 +76,12 @@ form fieldset .rogin_sub .id_pw_find a {
     background: #aaa;
     width:400px; height:1px;
     margin:40px 0;
+    margin: 0 auto;
 }
-.easy_login {}
+.easy_login {
+    margin-top:40px;
+    text-align: center;
+}
 .easy_login h1 {
     font-size: 1.125rem;
     font-weight: 700;
